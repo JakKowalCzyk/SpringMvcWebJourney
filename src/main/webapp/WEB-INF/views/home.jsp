@@ -12,6 +12,8 @@
     <h2><spring:message code="featuredProducts"/></h2>
     <a href="cart">cart</a><br/>
     <form:form method="GET"/>
+    <br/>
+    <a href="user?register">register</a>
 
 
     <%--<h2> <spring:message code="categories"/> </h2>--%>

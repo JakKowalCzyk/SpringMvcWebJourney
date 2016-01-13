@@ -9,14 +9,36 @@
     <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
       <schema id="1" name="base"/>
       <table id="2" parent="1" name="cities"/>
-      <column id="3" parent="2" name="id">
+      <table id="3" parent="1" name="hibernate_sequence"/>
+      <table id="4" parent="1" name="user"/>
+      <column id="5" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="6" parent="2" name="name">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="7" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="8" parent="3" name="next_val">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="9" parent="4" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="4" parent="2" name="name">
+      <column id="10" parent="4" name="name">
         <data-type>varchar(45)</data-type>
       </column>
-      <key id="5" parent="2" name="PRIMARY">
+      <column id="11" parent="4" name="email">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="12" parent="4" name="password">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <key id="13" parent="4" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
