@@ -11,6 +11,6 @@
     <title>Saved</title>
 </head>
 <body>
-
+<a href="login">Now you can login</a>
 </body>
 </html>

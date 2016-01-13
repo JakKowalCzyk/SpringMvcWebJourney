@@ -6,6 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 
 /**
  * Created by JK on 2016-01-13.
@@ -39,5 +40,12 @@ public class UserDao {
     @Transactional
     public void clear() {
         this.entityManager.clear();
+    }
+
+    public TypedQuery<User> findUserByName(String name) {
+        if(name == null || name.length()==0) throw new IllegalArgumentException("The name argument is required");
+        TypedQuery<User> query = entityManager.createQuery("SELECT o FROM User AS o where o.name = :name", User.class);
+        query.setParameter("name", name);
+        return query;
     }
 }

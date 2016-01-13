@@ -15,24 +15,7 @@ import javax.validation.Valid;
 /**
  * Created by JK on 2016-01-13.
  */
-@Controller
-//@RequestMapping(value = "/user")
+
 public class UserController {
-    @Autowired
-    private UserService userService;
 
-    @RequestMapping(value = "/user", params = "register")
-    public String createRegister(Model model){
-        model.addAttribute("user", new User());
-        return "user/register";
-    }
-
-    @RequestMapping(value = "/user", method = RequestMethod.POST)
-    public String saveUser(User user){
-//        if(result.hasErrors()){
-//            return "user/register";
-//        }
-        userService.saveUser(user);
-        return "user/savedSucces";
-    }
 }

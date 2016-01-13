@@ -17,12 +17,16 @@ public class UserService {
         return userDao.findUSer(id);
     }
 
+    public User findUser(String userId){
+        return userDao.findUserByName(userId).getSingleResult();
+    }
+
     public void saveUser(User user){
         userDao.persist(user);
         userDao.flush();
     }
 
-    public User loginUser(Long userId, String password){
+    public User loginUser(String userId, String password){
         User user = this.findUser(userId);
         if(user != null && user.getPassword().equals(password)){
             return user;

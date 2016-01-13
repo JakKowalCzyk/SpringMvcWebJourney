@@ -9,12 +9,23 @@
 </head>
 <body>
 <div class="container"/>
+<div style="float:right;margin-top: -30px">
+    <c:choose>
+        <c:when test="${empty logged.name}">
+            <a href="logout">Logout</a>
+        </c:when>
+        <c:otherwise>
+            Hello ${logged.name}! &nbsp;
+            <a href="logout">Logout</a>
+        </c:otherwise>
+    </c:choose>
+</div>
     <h2><spring:message code="featuredProducts"/></h2>
     <a href="cart">cart</a><br/>
     <form:form method="GET"/>
     <br/>
-    <a href="user?register">register</a>
-
+    <a href="user?register">register</a><br/>
+    <a href="login">login</a><br/>
 
     <%--<h2> <spring:message code="categories"/> </h2>--%>
     <%--<c:forEach var="category" items="${allCategories}">--%>
