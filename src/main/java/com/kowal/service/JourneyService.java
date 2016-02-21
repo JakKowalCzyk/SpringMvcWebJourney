@@ -17,7 +17,6 @@ public class JourneyService {
     private JourneyDao journeyDao;
 
     private User user;
-//    private JourneyNumber number;
     public List<Journey> findJourney(Long userId, Long journeyId){
         return journeyDao.findJourney(userId, journeyId);
     }
@@ -25,17 +24,6 @@ public class JourneyService {
     public void saveJourney(Journey journey){
         journeyDao.persist(journey);
         journeyDao.flush();
-    }
-
-    public int whatJourneyNumber(User user){
-        this.user = user;
-        int journeyNumber;
-        if(journeyDao.whatJourneyNumber(user.getId(), (long) 1) == 1){
-            journeyNumber = 1;
-        }else if(journeyDao.whatJourneyNumber(user.getId(), (long) 2) == 2){
-            journeyNumber = 2;
-        }else journeyNumber=3;
-        return journeyNumber;
     }
 
     public void addOneJourney(String name, User user, int whatNumber) {
