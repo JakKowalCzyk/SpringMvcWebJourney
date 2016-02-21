@@ -14,18 +14,16 @@
 </head>
 <body>
 <div class="container">
-    <div style="float:right;margin-top: -30px">
-        <c:choose>
-            <c:when test="${empty loggedInUser.name}">
-                <a href="logout">Logout</a>
-            </c:when>
-            <c:otherwise>
-                Hello ${loggedInUser.name}! &nbsp;
-                <a href="/logout">Logout</a>
-            </c:otherwise>
-        </c:choose>
+    <div style="float:right;margin-top: auto">
+        <a href="logout">Logout</a><br/>
     </div>
 </div>
+<br/>
+<br/>
 <h2>Welcome to your profile</h2>
+<form action="/user/userPanel" method="post">
+    <button id="addButton" class="form-control">Add new journey</button>
+    <%--<a href="/addJourney" >Add new journey</a>--%>
+</form>
 </body>
 </html>

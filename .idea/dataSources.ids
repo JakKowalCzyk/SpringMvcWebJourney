@@ -11,34 +11,67 @@
       <table id="2" parent="1" name="cities"/>
       <table id="3" parent="1" name="hibernate_sequence"/>
       <table id="4" parent="1" name="user"/>
-      <column id="5" parent="2" name="id">
+      <table id="5" parent="1" name="joruney"/>
+      <table id="6" parent="1" name="number"/>
+      <column id="7" parent="2" name="id">
         <mandatory>1</mandatory>
         <data-type>bigint(20)</data-type>
       </column>
-      <column id="6" parent="2" name="name">
+      <column id="8" parent="2" name="name">
         <data-type>varchar(255)</data-type>
       </column>
-      <key id="7" parent="2" name="PRIMARY">
+      <key id="9" parent="2" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="8" parent="3" name="next_val">
+      <column id="10" parent="3" name="next_val">
         <data-type>bigint(20)</data-type>
       </column>
-      <column id="9" parent="4" name="id">
+      <column id="11" parent="4" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="10" parent="4" name="name">
+      <column id="12" parent="4" name="name">
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="11" parent="4" name="email">
+      <column id="13" parent="4" name="password">
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="12" parent="4" name="password">
+      <column id="14" parent="4" name="email">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="15" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="16" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="17" parent="5" name="userId">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="18" parent="5" name="journeyId">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="19" parent="5" name="city">
         <data-type>varchar(45)</data-type>
       </column>
-      <key id="13" parent="4" name="PRIMARY">
+      <key id="20" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="21" parent="6" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="22" parent="6" name="userId">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="23" parent="6" name="journeyId">
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="24" parent="6" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
