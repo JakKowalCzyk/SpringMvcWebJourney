@@ -35,9 +35,7 @@
             </tr>
         </c:forEach>
     </table>
-    <%--<input type="submit" value="Place Order"/>--%>
-    </form>
-
+    <h3><a href="/user/userPanel">Save</a> </h3>
 </div>
 </body>
 </html>

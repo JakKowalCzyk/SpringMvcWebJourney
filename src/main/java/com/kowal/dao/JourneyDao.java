@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
@@ -24,14 +25,25 @@ public class JourneyDao {
         return query.getResultList();
         
     }
-    
+
     @Transactional
     public void persist(Journey journey){
         this.entityManager.persist(journey);
+
     }
     @Transactional
     public void flush() {
         this.entityManager.flush();
     }
 
+    @Transactional
+    public void remove(Journey journey){
+        journey = entityManager.merge(journey);
+        entityManager.remove(journey);
+    }
+
+//    @Transactional
+//    public void remove(Long userId, Long journeyId){
+//        Query query = entityManager.createQuery("DELETE from Journey o where o.userId = :userId AND o.journeyId = :journeyId", Journey.class);
+//    }
 }

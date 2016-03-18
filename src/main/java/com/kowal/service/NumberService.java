@@ -6,6 +6,10 @@ import com.kowal.dao.NumberDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by JK on 2016-02-21.
  */
@@ -13,13 +17,18 @@ import org.springframework.stereotype.Service;
 public class NumberService {
     @Autowired
     private NumberDao numberDao;
-
     private User user;
 
     public int WhatJourneyNumber(User user){
         this.user = user;
         int journeyNumber = numberDao.whatJourneyNumber(user.getId());
         this.addOneJourneyNumber(user, journeyNumber);
+        return journeyNumber;
+    }
+
+    public int WhatNumber(User user){
+        this.user = user;
+        int journeyNumber = numberDao.whatJourneyNumber(user.getId());
         return journeyNumber;
     }
 
@@ -33,5 +42,22 @@ public class NumberService {
     private void saveJourneyNumber(JouNumber jouNumber) {
         numberDao.persist(jouNumber);
         //numberDao.flush();
+    }
+
+    public void removeNumber(Long userId, Long journeyId){
+        JouNumber jouNumber = numberDao.findOneNumber(userId, journeyId);
+        //jouNumber.setUserId(userId);
+        //jouNumber.setJourneyId(journeyId);
+        numberDao.remove(jouNumber);
+        //numberDao.flush();
+    }
+    public ArrayList<Integer> getNumberList(User user){
+        this.user = user;
+        int whatJourneyNumber = this.WhatNumber(user);
+        ArrayList<Integer> numbersList = new ArrayList<Integer>();
+        for (int i = 1; i <= whatJourneyNumber; i++) {
+           numbersList.add(i);
+        }
+        return numbersList;
     }
 }

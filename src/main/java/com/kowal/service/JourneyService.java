@@ -35,4 +35,15 @@ public class JourneyService {
         journey.setJourneyId((long) whatNumber);
         this.saveJourney(journey);
     }
+
+    public void removeJourney(Long userId, Long journeyId){
+//        for (Journey jous: journeys) {
+//            journeyDao.remove(jous);
+//        }
+        List<Journey> journeys = journeyDao.findJourney(userId, journeyId);
+        for (Journey j: journeys) {
+            journeyDao.remove(j);
+        }
+        journeyDao.flush();
+    }
 }

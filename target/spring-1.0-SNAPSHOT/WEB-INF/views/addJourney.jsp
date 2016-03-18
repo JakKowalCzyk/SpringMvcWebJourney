@@ -18,6 +18,7 @@
 <body>
 <div class="container">
     <h2>Your cart</h2>
+    <h3><a href="/userPanel">Save</a> </h3>
     <table>
         <tr>
             <td width="50">Id</td>

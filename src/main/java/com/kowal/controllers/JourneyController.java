@@ -10,6 +10,7 @@ import com.kowal.service.JourneyService;
 import com.kowal.service.NumberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -33,16 +34,13 @@ public class JourneyController {
     @Autowired
     private NumberService numberService;
 
-    private JourneyDao journeyDao;
-
     private User user;
     private int whatNumber;
 
     @RequestMapping(value = "/addJourney", method = RequestMethod.GET)
-    public ModelAndView home(@ModelAttribute  User user) {
+    public ModelAndView home(@ModelAttribute  User user, ModelMap modelMap) {
         this.user = user;
         whatNumber = numberService.WhatJourneyNumber(user);
-        System.out.println(whatNumber);
         return new ModelAndView("addJourney", "cities", cityService.findAllCities());
     }
     @RequestMapping(value = "/addJourney", method = RequestMethod.POST)

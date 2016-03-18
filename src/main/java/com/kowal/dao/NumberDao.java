@@ -9,6 +9,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
+import static java.lang.Math.tan;
 import static java.lang.Math.toIntExact;
 
 /**
@@ -20,9 +21,16 @@ public class NumberDao {
     private EntityManager entityManager;
 
     public List<JouNumber> findNumber(Long userId){
-        TypedQuery<JouNumber> query = entityManager.createQuery("SELECT o from JouNumber  as o where o.userId = :userId", JouNumber.class);
+        TypedQuery<JouNumber> query = this.entityManager.createQuery("SELECT o from JouNumber  as o where o.userId = :userId", JouNumber.class);
         query.setParameter("userId", userId);
         return query.getResultList();
+    }
+
+    public JouNumber findOneNumber(Long userId, Long journeyId){
+        TypedQuery<JouNumber> query = this.entityManager.createQuery("SELECT o from JouNumber  as o where o.userId = :userId and o.journeyId = :journeyId", JouNumber.class);
+        query.setParameter("userId", userId);
+        query.setParameter("journeyId", journeyId);
+        return query.getSingleResult();
     }
 
     public int whatJourneyNumber(Long userId){
@@ -32,7 +40,6 @@ public class NumberDao {
         }else{
             JouNumber lastNumber =  numbers.get(numbers.size()-1);
             int whatNumber = toIntExact(lastNumber.getJourneyId());
-            System.out.println(whatNumber);
             return whatNumber+1;
         }
     }
@@ -42,6 +49,12 @@ public class NumberDao {
         this.entityManager.persist(jouNumber);
     }
 
+    @Transactional
+    public void remove(JouNumber jouNumber){
+        System.out.println(jouNumber.getJourneyId());
+        jouNumber = this.entityManager.merge(jouNumber);
+        this.entityManager.remove(jouNumber);
+    }
     public void flush() {
         this.entityManager.flush();
     }
