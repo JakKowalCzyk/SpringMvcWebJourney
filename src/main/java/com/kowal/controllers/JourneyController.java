@@ -38,7 +38,7 @@ public class JourneyController {
     private int whatNumber;
 
     @RequestMapping(value = "/addJourney", method = RequestMethod.GET)
-    public ModelAndView home(@ModelAttribute  User user, ModelMap modelMap) {
+    public ModelAndView home(@ModelAttribute  User user) {
         this.user = user;
         whatNumber = numberService.WhatJourneyNumber(user);
         return new ModelAndView("addJourney", "cities", cityService.findAllCities());

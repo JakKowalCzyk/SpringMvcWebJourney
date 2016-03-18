@@ -42,8 +42,5 @@ public class JourneyDao {
         entityManager.remove(journey);
     }
 
-//    @Transactional
-//    public void remove(Long userId, Long journeyId){
-//        Query query = entityManager.createQuery("DELETE from Journey o where o.userId = :userId AND o.journeyId = :journeyId", Journey.class);
-//    }
+
 }

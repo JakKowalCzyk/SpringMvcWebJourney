@@ -23,13 +23,6 @@ public class DisplayJourney {
 
     private User user;
 
-//    @RequestMapping(value = "/displayOneJourney", method = RequestMethod.GET)
-//    public ModelAndView display(@ModelAttribute User user){
-//        this.user = user;
-//        //List<Journey> journeyList = journeyService.findJourney(user.getId(), (long) number);
-//        return new ModelAndView("/displayOneJourney"); //, "journeyList", journeyList);
-//
-//    }
     @RequestMapping(value = "/displayOneJourney", method = RequestMethod.GET)
     public ModelAndView displayOne(@ModelAttribute("user") User user,  Integer number, ModelMap modelMap){
         modelMap.getOrDefault("number", number);

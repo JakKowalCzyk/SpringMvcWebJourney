@@ -2,38 +2,17 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/userPanel.jsp" line="48" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/kowal/controllers/UserController.java" line="54" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/kowal/controllers/UserController.java" line="53" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="985c20c4-c295-4637-805f-1220e9fc027d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kowal/controllers/DisplayJourney.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/displayOneJourney.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kowal/controllers/JourneyController.class" afterPath="$PROJECT_DIR$/target/classes/com/kowal/controllers/JourneyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kowal/controllers/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/kowal/controllers/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kowal/dao/JourneyDao.class" afterPath="$PROJECT_DIR$/target/classes/com/kowal/dao/JourneyDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kowal/dao/NumberDao.class" afterPath="$PROJECT_DIR$/target/classes/com/kowal/dao/NumberDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kowal/service/JourneyService.class" afterPath="$PROJECT_DIR$/target/classes/com/kowal/service/JourneyService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/kowal/service/NumberService.class" afterPath="$PROJECT_DIR$/target/classes/com/kowal/service/NumberService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/classes/com/kowal/controllers/JourneyController.class" afterPath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/classes/com/kowal/controllers/JourneyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/classes/com/kowal/controllers/UserController.class" afterPath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/classes/com/kowal/controllers/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/classes/com/kowal/dao/JourneyDao.class" afterPath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/classes/com/kowal/dao/JourneyDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/classes/com/kowal/dao/NumberDao.class" afterPath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/classes/com/kowal/dao/NumberDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/classes/com/kowal/service/JourneyService.class" afterPath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/classes/com/kowal/service/JourneyService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/classes/com/kowal/service/NumberService.class" afterPath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/classes/com/kowal/service/NumberService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kowal/controllers/DisplayJourney.java" afterPath="$PROJECT_DIR$/src/main/java/com/kowal/controllers/DisplayJourney.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kowal/controllers/JourneyController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kowal/controllers/JourneyController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kowal/controllers/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kowal/controllers/UserController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kowal/dao/JourneyDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/kowal/dao/JourneyDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kowal/dao/NumberDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/kowal/dao/NumberDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kowal/service/JourneyService.java" afterPath="$PROJECT_DIR$/src/main/java/com/kowal/service/JourneyService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kowal/service/NumberService.java" afterPath="$PROJECT_DIR$/src/main/java/com/kowal/service/NumberService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addJourney.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addJourney.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/userPanel.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/userPanel.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/views/addJourney.jsp" afterPath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/views/addJourney.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/views/cart.jsp" afterPath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/views/cart.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/views/user/userPanel.jsp" afterPath="$PROJECT_DIR$/target/spring-1.0-SNAPSHOT/WEB-INF/views/user/userPanel.jsp" />
     </list>
     <ignored path="SpringMvcT2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/controllers/DisplayJourney.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="57" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,8 +110,8 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/controllers/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7916667">
-              <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.056089744">
+              <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -142,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/service/JourneyService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -152,7 +131,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/dao/JourneyDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -162,8 +141,11 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/service/NumberService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-              <folding />
+              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+              <folding>
+                <element signature="e#1192#1193#0" expanded="true" />
+                <element signature="e#1236#1237#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,8 +163,8 @@
       <file leaf-file-name="addJourney.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addJourney.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.307692">
-              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+            <state vertical-scroll-proportion="-9.807693">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -192,7 +174,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/controllers/JourneyController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
+              <caret line="40" column="55" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -260,17 +242,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kowal/Number.java" />
         <option value="$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/EntityManager.class" />
         <option value="$PROJECT_DIR$/src/main/java/com/kowal/JouNumber.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kowal/controllers/JourneyController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kowal/controllers/DisplayJourney.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/displayOneJourney.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/userPanel.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kowal/dao/NumberDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kowal/controllers/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kowal/service/JourneyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kowal/dao/JourneyDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kowal/service/NumberService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kowal/dao/NumberDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addJourney.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kowal/controllers/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kowal/controllers/JourneyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kowal/controllers/DisplayJourney.java" />
       </list>
     </option>
   </component>
@@ -1213,12 +1195,12 @@
       <workItem from="1458028044821" duration="5414000" />
       <workItem from="1458123878029" duration="4189000" />
       <workItem from="1458198829332" duration="7784000" />
-      <workItem from="1458285803347" duration="5093000" />
+      <workItem from="1458285803347" duration="5288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123609000" />
+    <option name="totallyTimeSpent" value="123804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="0" />
@@ -1603,32 +1585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/controllers/JourneyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/controllers/DisplayJourney.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="57" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/service/JourneyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/JouNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2451923">
@@ -1637,10 +1593,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/service/NumberService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/service/JourneyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1648,8 +1604,19 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/dao/JourneyDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/service/NumberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+          <folding>
+            <element signature="e#1192#1193#0" expanded="true" />
+            <element signature="e#1236#1237#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1663,16 +1630,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addJourney.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.307692">
-          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/controllers/JourneyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="55" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/controllers/DisplayJourney.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kowal/controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7916667">
-          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.056089744">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
           <folding />
         </state>
       </provider>

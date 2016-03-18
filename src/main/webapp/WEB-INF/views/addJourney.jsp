@@ -13,11 +13,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Add</title>
 </head>
 <body>
 <div class="container">
-    <h2>Your cart</h2>
+    <h2>Add Cities to your journey</h2>
     <table>
         <tr>
             <td width="50">Id</td>

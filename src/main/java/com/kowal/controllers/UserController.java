@@ -31,7 +31,6 @@ public class UserController {
     @Autowired
     private JourneyService journeyService;
     private User user;
-    private int whatJourneyNumber;
     private ArrayList<Integer> numbersList;
 
 

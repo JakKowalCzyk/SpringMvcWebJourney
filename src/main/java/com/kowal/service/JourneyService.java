@@ -15,7 +15,6 @@ import java.util.List;
 public class JourneyService {
     @Autowired
     private JourneyDao journeyDao;
-
     private User user;
     public List<Journey> findJourney(Long userId, Long journeyId){
         return journeyDao.findJourney(userId, journeyId);
@@ -28,7 +27,6 @@ public class JourneyService {
 
     public void addOneJourney(String name, User user, int whatNumber) {
         this.user = user;
-        System.out.println(user.getId());
         Journey journey = new Journey();
         journey.setUserId(user.getId());
         journey.setCity(name);
@@ -37,9 +35,6 @@ public class JourneyService {
     }
 
     public void removeJourney(Long userId, Long journeyId){
-//        for (Journey jous: journeys) {
-//            journeyDao.remove(jous);
-//        }
         List<Journey> journeys = journeyDao.findJourney(userId, journeyId);
         for (Journey j: journeys) {
             journeyDao.remove(j);

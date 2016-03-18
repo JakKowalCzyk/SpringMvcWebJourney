@@ -41,15 +41,11 @@ public class NumberService {
 
     private void saveJourneyNumber(JouNumber jouNumber) {
         numberDao.persist(jouNumber);
-        //numberDao.flush();
     }
 
     public void removeNumber(Long userId, Long journeyId){
         JouNumber jouNumber = numberDao.findOneNumber(userId, journeyId);
-        //jouNumber.setUserId(userId);
-        //jouNumber.setJourneyId(journeyId);
         numberDao.remove(jouNumber);
-        //numberDao.flush();
     }
     public ArrayList<Integer> getNumberList(User user){
         this.user = user;
