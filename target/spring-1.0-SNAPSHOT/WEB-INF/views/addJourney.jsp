@@ -13,12 +13,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Add</title>
 </head>
 <body>
 <div class="container">
-    <h2>Your cart</h2>
-    <h3><a href="/userPanel">Save</a> </h3>
+    <h2>Add Cities to your journey</h2>
     <table>
         <tr>
             <td width="50">Id</td>
@@ -36,9 +35,15 @@
             </tr>
         </c:forEach>
     </table>
-    <%--<input type="submit" value="Place Order"/>--%>
-    </form>
-
+    <h3><div class="form-group form">
+        <form action='/addJourneySomeones' method="post">
+            <div>
+                <label>Add your own city:</label>
+                <input type="text" id="cityId" name="cityId" placeholder="city name" class="form-control"/>
+            </div>
+            <button id="addCityButton" class="form-control">Add</button>
+        </form></div></h3>
+    <h4><a href="/user/userPanel">Save</a> </h4>
 </div>
 </body>
 </html>

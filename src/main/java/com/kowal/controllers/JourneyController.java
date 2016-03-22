@@ -11,10 +11,7 @@ import com.kowal.service.NumberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Locale;
@@ -46,6 +43,12 @@ public class JourneyController {
     @RequestMapping(value = "/addJourney", method = RequestMethod.POST)
     public ModelAndView saveJourney(City city){
         journeyService.addOneJourney(city.getName(), user, whatNumber);
+        return new ModelAndView("addJourney", "cities", cityService.findAllCities());
+    }
+
+    @RequestMapping(value = "/addJourneySomeones", method = RequestMethod.POST)
+    public ModelAndView saveSomeonesJourney(@RequestParam String cityId){
+        journeyService.addOneJourney(cityId, user, whatNumber);
         return new ModelAndView("addJourney", "cities", cityService.findAllCities());
     }
 }

@@ -20,6 +20,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ *
+
  * Created by JK on 2016-01-13.
  */
 @Controller
@@ -63,4 +65,12 @@ public class UserController {
         return new ModelAndView("user/userPanel" , "numberList", numbersList);
 
     }
+
+    @RequestMapping(value = "/userPanelJourneyUp", method = RequestMethod.POST)
+    public String upJourney(ModelMap modelMap, @RequestParam("number") Integer number){
+        modelMap.addAttribute("user", user);
+        modelMap.addAttribute("number", number);
+        return "redirect:/upOneJourney";
+    }
+
 }

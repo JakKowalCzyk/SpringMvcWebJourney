@@ -35,7 +35,15 @@
             </tr>
         </c:forEach>
     </table>
-    <h3><a href="/user/userPanel">Save</a> </h3>
+    <h3><div class="form-group form">
+        <form action='/addJourneySomeones' method="post">
+            <div>
+                <label>Add your own city:</label>
+                <input type="text" id="cityId" name="cityId" placeholder="city name" class="form-control"/>
+            </div>
+            <button id="addCityButton" class="form-control">Add</button>
+        </form></div></h3>
+    <h4><a href="/user/userPanel">Save</a> </h4>
 </div>
 </body>
 </html>

@@ -32,6 +32,7 @@
             <td width="50">Id</td>
             <td width="50"></td>
             <td width="50"></td>
+            <td width="50"></td>
         </tr>
         <tr>
             <c:forEach items="${numberList}" var="number">
@@ -41,6 +42,10 @@
         <form action="/userPanel" method="post">
             <input type="hidden" name="number" value="${number}"/>
             <td><input type="submit" value="See"/></td>
+        </form>
+        <form action="/userPanelJourneyUp" method="post">
+            <input type="hidden" name="number" value="${number}"/>
+            <td><input type="submit" value="Update"/></td>
         </form>
         <form action="/userPanelRemove" method="post">
             <input type="hidden" name="number" value="${number}"/>

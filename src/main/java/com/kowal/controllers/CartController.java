@@ -1,6 +1,5 @@
 package com.kowal.controllers;
 
-import com.kowal.beans.Cart;
 import com.kowal.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,8 +16,6 @@ import java.util.Locale;
  */
 @Controller
 public class CartController {
-    @Autowired
-    private Cart cart;
     @Autowired
     private CityService cityService;
 
