@@ -29,7 +29,10 @@ public class JourneyDao {
     @Transactional
     public void persist(Journey journey){
         this.entityManager.persist(journey);
-
+    }
+    @Transactional
+    public Journey findOneJourney(Long id){
+        return this.entityManager.find(Journey.class, id);
     }
     @Transactional
     public void flush() {

@@ -26,7 +26,7 @@
     <%--<a href="/addJourney" >Add new journey</a>--%>
 </form>
 <h3>
-    See / delete journey nr:
+    See / update / delete journey nr:
     <table>
         <tr>
             <td width="50">Id</td>

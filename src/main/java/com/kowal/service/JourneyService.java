@@ -41,4 +41,8 @@ public class JourneyService {
         }
         journeyDao.flush();
     }
+
+    public void removeOneJourney(Long id){
+        journeyDao.remove(journeyDao.findOneJourney(id));
+    }
 }
