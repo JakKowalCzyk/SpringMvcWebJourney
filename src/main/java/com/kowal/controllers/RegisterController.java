@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Created by JK on 2016-01-13.
  */
 @Controller
-//@RequestMapping(value = "/user")
 public class RegisterController {
     @Autowired
     private UserService userService;
@@ -25,9 +24,6 @@ public class RegisterController {
 
     @RequestMapping(value = "/user", method = RequestMethod.POST)
     public String saveUser(User user){
-//        if(result.hasErrors()){
-//            return "user/register";
-//        }
         userService.saveUser(user);
         return "user/savedSucces";
     }

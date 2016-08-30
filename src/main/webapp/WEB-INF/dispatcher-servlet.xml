@@ -24,8 +24,6 @@
                 class="org.springframework.context.support.ResourceBundleMessageSource">
         <beans:property name="basename" value="META-INF.messages" />
     </beans:bean>
-
-
     <bean id="datasource"
           class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
@@ -33,12 +31,10 @@
         <property name="username" value="springUser" />
         <property name="password" value="springUser" />
     </bean>
-    <!-- Transaction Manager -->
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory" />
     </bean>
     <tx:annotation-driven transaction-manager="transactionManager" />
-    <!-- Entity Manager -->
     <bean id="entityManagerFactory"
           class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="dataSource" ref="datasource" />

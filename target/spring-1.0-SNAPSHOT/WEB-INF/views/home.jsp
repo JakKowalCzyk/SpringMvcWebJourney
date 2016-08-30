@@ -5,21 +5,17 @@
 <html>
 <head>
     <title><spring:message code="welcome"/></title>
-    <%--<jsp:include page="/WEB-INF/views/include/head-include.jsp" />--%>
+
 </head>
 <body>
 <div class="container"/>
-    <h2><spring:message code="featuredProducts"/></h2>
-    <a href="cart">cart</a><br/>
+    <h2><spring:message code="hello"/></h2>
     <form:form method="GET"/>
     <br/>
     <a href="user?register">register</a><br/>
     <a href="login">login</a><br/>
 
-    <%--<h2> <spring:message code="categories"/> </h2>--%>
-    <%--<c:forEach var="category" items="${allCategories}">--%>
-        <%--<a href="categories/${category.id}"><c:out value="${category.name}"/></a> <br/>--%>
-    <%--</c:forEach>--%>
+
 
 </div>
 </body>

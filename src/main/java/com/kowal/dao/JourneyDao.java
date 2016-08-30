@@ -18,12 +18,13 @@ import java.util.List;
 public class JourneyDao {
     @PersistenceContext
     private EntityManager entityManager;
+    private final String selectJourney = "SELECT o from Journey as o where o.userId = :userId AND o.journeyId = :journeyId";
+
     public List<Journey> findJourney(Long userId, Long journeyId){
-        TypedQuery<Journey> query = entityManager.createQuery("SELECT o from Journey as o where o.userId = :userId AND o.journeyId = :journeyId", Journey.class);
+        TypedQuery<Journey> query = entityManager.createQuery(selectJourney, Journey.class);
         query.setParameter("userId", userId);
         query.setParameter("journeyId", journeyId);
         return query.getResultList();
-        
     }
 
     @Transactional

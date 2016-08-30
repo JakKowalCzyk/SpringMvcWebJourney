@@ -13,6 +13,11 @@
 </head>
 <body>
 <div class="container">
+    <div style="float:right;margin-top: auto">
+        <a href="logout">Logout</a><br/>
+    </div>
+</div>
+<div class="container">
     <table>
         <tr>
             <td width="150">Name</td>
@@ -24,5 +29,6 @@
         </c:forEach>
     </table>
 </div>
+<h2><a href="/user/userPanel">Go back to your panel</a> </h2>
 </body>
 </html>

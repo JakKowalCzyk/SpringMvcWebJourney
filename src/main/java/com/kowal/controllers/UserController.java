@@ -45,7 +45,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/user/userPanel", method = RequestMethod.POST)
-    public String addProducts(ModelMap modelMap){
+    public String addJourney(ModelMap modelMap){
         modelMap.addAttribute(user);
         return "redirect:/addJourney";
     }

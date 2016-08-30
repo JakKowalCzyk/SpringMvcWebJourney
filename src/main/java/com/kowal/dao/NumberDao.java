@@ -20,14 +20,17 @@ public class NumberDao {
     @PersistenceContext
     private EntityManager entityManager;
 
+    private final String selectNumber = "SELECT o from JouNumber  as o where o.userId = :userId";
+    private final String selectOneNumber = "SELECT o from JouNumber  as o where o.userId = :userId and o.journeyId = :journeyId";
+
     public List<JouNumber> findNumber(Long userId){
-        TypedQuery<JouNumber> query = this.entityManager.createQuery("SELECT o from JouNumber  as o where o.userId = :userId", JouNumber.class);
+        TypedQuery<JouNumber> query = this.entityManager.createQuery(selectNumber, JouNumber.class);
         query.setParameter("userId", userId);
         return query.getResultList();
     }
 
     public JouNumber findOneNumber(Long userId, Long journeyId){
-        TypedQuery<JouNumber> query = this.entityManager.createQuery("SELECT o from JouNumber  as o where o.userId = :userId and o.journeyId = :journeyId", JouNumber.class);
+        TypedQuery<JouNumber> query = this.entityManager.createQuery(selectOneNumber, JouNumber.class);
         query.setParameter("userId", userId);
         query.setParameter("journeyId", journeyId);
         return query.getSingleResult();

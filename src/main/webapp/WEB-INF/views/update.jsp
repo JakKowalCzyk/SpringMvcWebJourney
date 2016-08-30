@@ -13,6 +13,11 @@
 </head>
 <body>
 <div class="container">
+    <div style="float:right;margin-top: auto">
+        <a href="logout">Logout</a><br/>
+    </div>
+</div>
+<div class="container">
     <h2>Update your journey</h2>
     <table>
         <tr>

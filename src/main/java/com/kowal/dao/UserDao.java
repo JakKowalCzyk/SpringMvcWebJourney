@@ -18,6 +18,7 @@ public class UserDao {
     @PersistenceContext
     private EntityManager entityManager;
 
+    private final String selectUser = "SELECT o FROM User AS o where o.name = :name";
 
     public EntityManager getEntityManager() {
         return entityManager;
@@ -46,7 +47,7 @@ public class UserDao {
     public TypedQuery<User> findUserByName(String name) {
         if(name == null || name.length()==0) throw new IllegalArgumentException("The name argument is required");
         try{
-            TypedQuery<User> query = entityManager.createQuery("SELECT o FROM User AS o where o.name = :name", User.class);
+            TypedQuery<User> query = entityManager.createQuery(selectUser, User.class);
             query.setParameter("name", name);
             return query;
         }catch (NoResultException no){

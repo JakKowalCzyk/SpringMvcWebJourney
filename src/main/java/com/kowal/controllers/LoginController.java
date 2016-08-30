@@ -29,7 +29,6 @@ public class LoginController {
 
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-
     public String logUser(@RequestParam String userId, @RequestParam String password,
                           ModelMap modelMap, Model model){
         User user = userService.loginUser(userId, password);
